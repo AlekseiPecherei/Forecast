@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вт, 5 января (сегодня)"
+        android:id="@+id/date" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.pecherey.alexey.weather.logic.forecast.ForecastSimpleItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/view1"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+
+        <com.pecherey.alexey.weather.logic.forecast.ForecastSimpleItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/view2"
+            android:layout_weight="1"
+            android:orientation="horizontal" />
+
+        <com.pecherey.alexey.weather.logic.forecast.ForecastSimpleItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/view3"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+
+        <com.pecherey.alexey.weather.logic.forecast.ForecastSimpleItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/view4"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+</LinearLayout>
